@@ -59,6 +59,7 @@ fitted = lr.fit(x, y)
 y_pred = fitted.coef_[0]*x
 
 plt.plot(y)
-plt.plot(y_pred)
+plt.plot(y_pred, label = 'line of best fit')
+plt.legend(loc = 'upper right')
 plt.ylabel('Reward')
 plt.xlabel('Time')
