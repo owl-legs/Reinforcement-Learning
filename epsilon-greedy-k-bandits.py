@@ -1,4 +1,4 @@
-#Action-Method w Epsilon parameter for K Bandits
+#Epsilon-greedy k bandits simulation
 
 import numpy as np
 import matplotlib.pyplot as plt
