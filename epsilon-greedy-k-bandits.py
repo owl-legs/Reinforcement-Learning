@@ -8,7 +8,7 @@ from sklearn import linear_model
 # `k` : number of bandits or actions
 # `T` : how many actions taken (e.g. how long to simulate over)
 # `epsilon` : with a probability of epsilon, we will choose to explore the available actions that do not have the highest reward/selection ratio [Qt_A] with equal probability.
-  # Note that with a probability of 1 - epsilon, we will choose to exploit our current knowledge and select the action having the highest reward/selection ratio [Qt_A]
+  # Note that with a probability of 1 - epsilon, we will choose to exploit our current knowledge and greedily select the action having the highest reward/selection ratio [Qt_A]
 
 def simulate_bandits(k, T, epsilon):
   
