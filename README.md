@@ -1,8 +1,8 @@
 # Reinforcement Learning Projects
 
-## 1: K-Bandits Simulation
+### 1: K-Bandits Simulation
 
-## 2: Markov Decision Processes
-### 2.1 Generalized Transportation MDP
+### 2: Markov Decision Processes
+- Generalized Transportation MDP
 
 
