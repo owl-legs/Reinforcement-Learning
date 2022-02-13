@@ -7,6 +7,8 @@ Created on Sat Feb  5 15:55:43 2022
 
 import os
 
+os.chdir('Documents/GitHub/Reinforcement-Learning')
+
 from generalized_transportation_mdp import TransportationMDP
 
 def valueIteration(mdp):
