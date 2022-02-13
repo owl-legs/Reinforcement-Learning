@@ -61,8 +61,10 @@ class TransportationMDP(object):
             
         elif action == 'tram':
             
-            result.append((state*2, 0.5, -2)) #reward = -2: 1 tram ride takes 2 units of time, but you travel state*2 blocks, assuming the tram doesn't fail. p(fail) = 0.5
-            result.append((state, 0.5 -2)) #if the tram failes, we remain where we are and lose the time.
+            fail_probability = 0.5
+            
+            result.append((state*2, 1 - fail_probability, -2)) #reward = -2: 1 tram ride takes 2 units of time, but you travel state*2 blocks, assuming the tram doesn't fail. p(fail) = 0.5
+            result.append((state, fail_probability, -2)) #if the tram failes, we remain where we are and lose the time.
             
         return(result)
     
